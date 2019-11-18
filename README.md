@@ -1,2 +1,2 @@
 # demo_image_api
-Demonstartion task 'codejam-image-api'
+https://victoriasayevich.github.io/demo_image_api/
