@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Codejam Image Api</title>
+</head>
+
+<body>
+    <header>
+        <div class="burger-menu"><i class="fas fa-bars"></i></div>
+        <h1>CodeJam - Palette</h1>
+    </header>
+    <main>
+        <nav class="navigation">
+            <nav class="tools">
+                <ul>
+                    <li>
+                        <button id="paint_bucket" class="fas fa-fill-drip tool_btn"></button>
+                        <span>Paint bucket (P)</span></li>
+                    <li>
+                        <button id="pipette" class="fas fa-eye-dropper tool_btn"></button>
+                        <span>Choose color(I)</span></li>
+                    <li>
+                        <button id="pencil" class="fas fa-pencil-alt tool_btn"></button>
+                        <span>Pencil(B)</span></li>
+                </ul>
+            </nav>
+            <nav class="colors">
+                <ul>
+                    <li>
+                        <button id="current_color" class="circle">
+                            <input type="color" class="circle" id="current_color_input"></input>
+                        </button>
+                        <span>Current color</span></li>
+                    <li>
+                        <button id="prev_color" class="circle"></button>
+                        <span>Prev color</span></li>
+                    <li>
+                        <button id="first_color" class="circle"></button><span>red</span></li>
+                    <li>
+                        <button id="second_color" class="circle"></button><span>blue</span></li>
+                </ul>
+            </nav>
+        </nav>
+        <div class="draw_section">
+            <form id="form_search_city">
+                <input type="button" name="load" class="btn" id="load_button" value="Load image">
+                <input type="text" class="search" name="search_city" id="search_city" placeholder="Enter name city">
+                <input type="button" class="btn" name="black_white" value="B&W">
+            </form>
+            <canvas id="canvas"></canvas>
+            <input type="range" id="canvas_size" name="size" min="4" max="512" step="12">
+            <button class="btn" id="clear">Clear</button>
+        </div>
+    </main>
+
+
+</body>
+<script src="./scripts/image_api.js"></script>
+
+</html>

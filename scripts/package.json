@@ -1,0 +1,30 @@
+{
+    "name": "codejam-image-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "image_api.js",
+    "scripts": {
+        "lint": "eslint --debug src/",
+        "lint:write": "eslint --debug src/ --fix",
+        "prettier": "prettier --write src/**/*.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VictoriaSayevich/codejam-image-api.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/VictoriaSayevich/codejam-image-api/issues"
+    },
+    "homepage": "https://github.com/VictoriaSayevich/codejam-image-api#readme",
+    "devDependencies": {
+        "eslint": "^6.6.0",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-config-prettier": "^6.5.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-prettier": "^3.1.1",
+        "prettier": "^1.18.2"
+    }
+}
